@@ -16,13 +16,17 @@ select {
     position: relative;
 	display: inline-block;
     width: 230px;
+    height: 90px;
+    line-height: normal;
+    vertical-align: middle;
+//    margin-top: 20px;
     
     &::before {
         position: absolute;
         content: "";
         width: 227px;
         height: 86px;
-        top: -25px;
+        top: 0;
         left: 0;
         background: url("/img/header-moscow.png") no-repeat 20% 50%;
     }
@@ -32,8 +36,8 @@ select {
         content: "";
         width: 19px;
         height: 28px;
-        top: 5px;
-        left: 25px;
+        top: 25px;
+        left: 35px;
         background: url("/img/icon-top-place-1.png") no-repeat 20% 50%;
     }
     
@@ -42,46 +46,56 @@ select {
         width: 135px;
         margin-left: 60px;
         
-//        overflow: hidden;
+    }
+    
+    &__title {
+        @include rob-med(13px, 26px);
+        color: #fff;
     }
     
     &__list {
         display: none;
-        margin-top: 30px;
+        margin-top: 50px;
         top: 0;
         left: 0;
         
         position: absolute;
         z-index: 400;
         
-        &--active {
-//            display: block;
-        }
+
     }
     
     &__item {
-//        position: absolute;
-//        width: 200px;
-//        height: 25px;
-        top: 0;
-        left: 0;
+        @include dinpro-reg(23px, 28px);
         z-index: 100;
-        font-size: 45px;
     }
     
     &__toogle {
-        position: absolute;
-        background: url("/img/select-button.png") no-repeat 50% 50%;
-        top: 10px;
-        right: 0;
-        width: 150px;
-        height: 13px;
-        z-index: 50;
-        font-size: 30px;
+        @include dinpro-reg(23px, 28px);
+        position: relative;
+        margin-left: 71px;
+        border: 0;
+        color: #fff;
+        background: transparent;
+        text-transform: uppercase;
+        
+        
+        &::before {
+            position: absolute;
+            content: "";
+            background: url("/img/select-button.png") no-repeat 50% 50%;
+            top: 10px;
+            right: -20px;
+            width: 15px;
+            height: 13px;
+            z-index: 50;
+        }
+    }
+    
+    &__upper {
+        @include dinpro-reg(23px, 28px);
+        position: relative;
+        text-transform: uppercase;
+        color: #fff;
     }
 }
-
-option {
-    background: #b8b8b8;
-}
-

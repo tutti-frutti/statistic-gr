@@ -5,6 +5,7 @@
     &__top {
         border-bottom: 1px solid #fff;
         min-height: 135px;
+        line-height: 135px;
     }
     
     &__top-wrapper {
@@ -19,14 +20,47 @@
     
     &__logo {
         display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
     }
     
     &__tel {
         display: inline-block;
+        text-align: right;
+        line-height: normal;
+        vertical-align: middle;
+        
     }
+    
+    &__tel-item {
+        
+        &--bfz {
+            @include rob-bold(50px, 32px);
+            color: #fff;
+        }
+        
+        &--color {
+            @include rob-med(50px, 32px);
+            color: #d9efff;
+        }
+    }
+    
+    &__tel-link {
+            @include rob-med(14px, 26px);
+            border-bottom: 1px dashed #fff;
+            color: #fff;
+        }
     
     &__office {
         display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+        
+        &-link {
+            @include rob-med(13px, 25px);
+            border-bottom: 1px dashed #fff;
+            color: #fff;
+        }
     }
 }
 

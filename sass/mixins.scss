@@ -5,3 +5,19 @@
     font-size: $font-size;
     line-height: $line-height;
 }
+
+@mixin rob-med($font-size, $line-height) {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+
+@mixin rob-bold($font-size, $line-height) {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}
