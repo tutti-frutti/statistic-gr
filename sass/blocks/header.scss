@@ -1,0 +1,35 @@
+.header {
+    background: url("/img/header-bg.jpg");
+    min-height: 211px;
+    
+    &__top {
+        border-bottom: 1px solid #fff;
+        min-height: 135px;
+    }
+    
+    &__top-wrapper {
+        max-width: 1162px;
+        margin: 0 auto;
+    }
+    
+    &__bottom-wrapper {
+        max-width: 1162px;
+        margin: 0 auto;
+    }
+    
+    &__logo {
+        display: inline-block;
+    }
+    
+    &__tel {
+        display: inline-block;
+    }
+    
+    &__office {
+        display: inline-block;
+    }
+}
+
+//.select {
+//        display: inline-block;
+//    }

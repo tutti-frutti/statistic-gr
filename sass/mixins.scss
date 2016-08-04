@@ -1,0 +1,7 @@
+@mixin dinpro-reg($font-size, $line-height) {
+    font-family: "DINPro";
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}

@@ -1,0 +1,87 @@
+select {
+    @include dinpro-reg(23px, 78px);
+    position: relative;
+    width: 150px;
+    height: 30px;
+    border: 0;
+    text-decoration: underline;
+    text-transform: uppercase;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    z-index: 100;
+}
+
+.select {
+    position: relative;
+	display: inline-block;
+    width: 230px;
+    
+    &::before {
+        position: absolute;
+        content: "";
+        width: 227px;
+        height: 86px;
+        top: -25px;
+        left: 0;
+        background: url("/img/header-moscow.png") no-repeat 20% 50%;
+    }
+    
+    &::after {
+        position: absolute;
+        content: "";
+        width: 19px;
+        height: 28px;
+        top: 5px;
+        left: 25px;
+        background: url("/img/icon-top-place-1.png") no-repeat 20% 50%;
+    }
+    
+    &__body {
+        position: relative;
+        width: 135px;
+        margin-left: 60px;
+        
+//        overflow: hidden;
+    }
+    
+    &__list {
+        display: none;
+        margin-top: 30px;
+        top: 0;
+        left: 0;
+        
+        position: absolute;
+        z-index: 400;
+        
+        &--active {
+//            display: block;
+        }
+    }
+    
+    &__item {
+//        position: absolute;
+//        width: 200px;
+//        height: 25px;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        font-size: 45px;
+    }
+    
+    &__toogle {
+        position: absolute;
+        background: url("/img/select-button.png") no-repeat 50% 50%;
+        top: 10px;
+        right: 0;
+        width: 150px;
+        height: 13px;
+        z-index: 50;
+        font-size: 30px;
+    }
+}
+
+option {
+    background: #b8b8b8;
+}
+

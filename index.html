@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,800,800italic,300,300italic,600,600italic|Roboto:400,700,700italic,300,300italic,500,500italic,100,100italic|Roboto+Slab:400,700,300,100&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <title>Statistic Group</title>
 </head>
 
@@ -13,14 +15,33 @@
     <header class="header">
         <div class="header__top">
             <div class="header__top-wrapper">
-                <div class="header__logo"></div>
-                <div class="header__select">
+                <div class="header__logo"><img src="/img/logo-top.png" alt="Statistic Group"></div>
+                
+<!--
+                <div class="select">
+                <div class="select__body">
                     <select name="cities">
-                        <option value="moscow">Москва</option>
-                        <option value="piter">Санкт-Петербург</option>
-                        <option value="magadan">Магадан</option>
+                        <option value="moscow"><span class="header__select--low">г.</span>Москва</option>
+                        <option value="piter">г.Санкт-Петербург</option>
+                        <option value="magadan">г.Магадан</option>
                     </select>
+                    <a href="#" class="select__button"></a>
                 </div>
+                </div>
+-->
+               
+               <div class="select">
+                   <div class="select__body">
+                       <ul class="select__list">
+                           <li class="select__item">г.Москва</li>
+                           <li class="select__item">г.Санкт-Петербург</li>
+                           <li class="select__item">г.Магадан</li>
+                           <li class="select__item">г.Улан-Батор</li>
+                       </ul>
+                   </div>
+                   <button class="select__toogle">Москва</button>
+               </div>
+                
                 <div class="header__tel">
                     <ul class="header__tel-list">
                         <li class="header__tel-item">+7 (495) 760-76-47</li>
@@ -29,6 +50,8 @@
                 </div>
                 <div class="header__office">Аренда офисов</div>
             </div>
+            </div>
+            
             <div class="header__bottom">
                 <div class="header__bottom-wrapper">
                     <ul class="header__list">
@@ -48,12 +71,14 @@
                     </ul>
                 </div>
             </div>
-        </div>
+            
+            <div class="tenders">Участие в тендерах</div>
         
-        </header>
-        
-        <main>
-        
+
+    </header>
+
+    <main>
+
         <nav class="top-nav">
             <ul class="top-nav__list">
                 <li class="top-nav__items"><a href="#">Оценочные услуги</a></li>
@@ -64,7 +89,7 @@
                 <li class="top-nav__items"><a href="#">Контакты</a></li>
             </ul>
         </nav>
-        
+
         <div class="breadcrumbs-top">
             <ul class="breadcrumbs-top__list">
                 <li class="breadcrumbs-top"><a href="#">Главная</a></li>
@@ -72,15 +97,15 @@
                 <li class="breadcrumbs-top"><a href="#">Оценка недвижимости</a></li>
             </ul>
         </div>
-        
+
         <h1 class="page-title">Оценка недвижимости</h1>
-        
+
         <div class="main-wrapper">
             <div class="left-column">
-                
+
                 <nav class="nav-left">
-                   
-                   <ul class="nav-left__top">
+
+                    <ul class="nav-left__top">
                         <li class="nav-left__click"><a href="#">О компании</a>
                             <ul class="nav-left__medium">
                                 <li class="nav-left__item"><a href="#">Ключевые этапы основания</a>
@@ -105,7 +130,7 @@
                             </ul>
                         </li>
                     </ul>
-                    
+
                     <ul class="nav-left__top">
                         <li class="nav-left__click"><a href="#">Экспертиза</a>
                             <ul class="nav-left__medium">
@@ -125,7 +150,7 @@
                             </ul>
                         </li>
                     </ul>
-                    
+
                     <ul class="nav-left__top">
                         <li class="nav-left__click"><a href="#">Оценка</a>
                             <ul class="nav-left__medium">
@@ -154,36 +179,36 @@
                             </ul>
                         </li>
                     </ul>
-                    
-                    
+
+
                     <ul class="nav-left__top">
                         <li class="nav-left__click"><a href="#">Юридические услуги</a>
                             <ul class="nav-left__medium">
                                 <li class="nav-left__item"><a href="#">Юр услуги осн список</a>
-                                <li class="nav-left__item"><a href="#">Юр услуги осн список</a>
-                                <li class="nav-left__item"><a href="#">Юр услуги осн список</a>
-                                    <ul class="nav-left__bottom">
-                                        <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
-                                        <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
-                                        <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
-                                <li class="nav-left__item"><a href="#">Юр услуги осн список</a>
-                                    <ul class="nav-left__bottom">
-                                        <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
-                                        <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
-                                        <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
-                                <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
-                                <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
-                                <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
+                                    <li class="nav-left__item"><a href="#">Юр услуги осн список</a>
+                                        <li class="nav-left__item"><a href="#">Юр услуги осн список</a>
+                                            <ul class="nav-left__bottom">
+                                                <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
+                                                <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
+                                                <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
+                                        <li class="nav-left__item"><a href="#">Юр услуги осн список</a>
+                                            <ul class="nav-left__bottom">
+                                                <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
+                                                <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
+                                                <li class="nav-left__sub-item"><a href="#">Юр услуги доп список</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
+                                        <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
+                                        <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
+                                        <li class="nav-left__item"><a href="#">Юр услуги осн список</a></li>
                             </ul>
-                        </li>
+                            </li>
                     </ul>
-                    
+
                     <ul class="nav-left__top">
                         <li class="nav-left__click"><a href="#">Бухгалтерские услуги</a>
                             <ul class="nav-left__medium">
@@ -209,7 +234,7 @@
                             </ul>
                         </li>
                     </ul>
-                    
+
                     <ul class="nav-left__top">
                         <li class="nav-left__click"><a href="#">Информация</a>
                             <ul class="nav-left__medium">
@@ -235,7 +260,7 @@
                             </ul>
                         </li>
                     </ul>
-                    
+
                     <ul class="nav-left__top">
                         <li class="nav-left__click"><a href="#">Контакты</a>
                             <ul class="nav-left__medium">
@@ -250,7 +275,7 @@
                         </li>
                     </ul>
                 </nav>
-                
+
                 <div class="ask-question">
                     <h3 class="ask-question__title">Задать вопрос эксперту</h3>
                     <ul class="ask-question__list">
@@ -260,7 +285,7 @@
                     </ul>
                     <a href="#" class="btn get-consult">Получить консультацию</a>
                 </div>
-                
+
                 <div class="special-offer">
                     <p class="special-offer__top">Спецпредложение</p>
                     <h3 class="special-offer__title">Оценка стоимости недвижимости</h3>
@@ -268,7 +293,7 @@
                     <p class="special-offer__descr">За более подробной информацией обращайтесь к нашим специалистам</p>
                     <a href="#" class="btn get-consult">Заказать оценку</a>
                 </div>
-                
+
                 <div class="news">
                     <div class="news__wrapper">
                         <p class="news__name">Главные новости</p>
@@ -277,33 +302,33 @@
                             <li class="news__items news__descr"><a class="news__link" href="#">Оценивание квартир - ныне востребованный вид оценки недвижимости</a></li>
                             <li class="news__items news__date">Авг 25, 2015</li>
                         </ul>
-                        
+
                         <ul class="news__list">
                             <li class="news__items news__descr"><a class="news__link" href="#">Поэтому так важно не запутаться во множестве специфических терминов</a></li>
                             <li class="news__items news__date">Авг 25, 2015</li>
                         </ul>
-                        
+
                         <ul class="news__list">
                             <li class="news__items news__descr"><a class="news__link" href="#">Например, кто из россиян, далеких от права, знает, что Ваша квартира</a></li>
                             <li class="news__items news__date">Авг 25, 2015</li>
                         </ul>
-                        
+
                         <ul class="news__list">
                             <li class="news__items news__descr"><a class="news__link" href="#">И что она обладает всеми присущими именно вещественной недвижимости</a></li>
                             <li class="news__items news__date">Авг 25, 2015</li>
                         </ul>
-                        
+
                     </div>
                 </div>
-                
+
             </div>
-            
+
             <div class="right-column">
                 <h3 class="right-column__title">Эксперты Statistic Group оцент любой объект недвижимости</h3>
-                
+
                 <div class="service-preview">
                     <div class="service-preview__img"><img src="" alt="Оценка"></div>
-                    
+
                     <div class="service-order">
                         <ul class="service-order__list">
                             <li class="service-order__item service-order__title"></li>
@@ -311,15 +336,15 @@
                             <li class="service-order__item"><a href="#" class="btn get-consult">Заказать оценку</a></li>
                         </ul>
                     </div>
-                    
+
                 </div>
-                
+
                 <div class="service-description">
                     <p class="service-description__text"><strong>Оценка стоимости недвижимости</strong> - процесс определения оценщиком рыночной стоимости объекта недвижимости</p>
                     <p class="service-description__text">Оценка стоимости недвижимости включает: определение стоимости права собственности или иных прав, например, права аренды, права пользования и т.д. в отношении различных объектов недвижимости.</p>
                     <p class="service-description__text">Проведение оценки недвижимости: оценщику приходится принимать во внимание много факторов при оценко недвижимости в зависимости от типа объекта оценки (жилой, коммерческой), назначения (офисной, торговой, складской, производственной), площади помещений.</p>
                 </div>
-                
+
                 <div class="company-services">
                     <h3 class="company-services__title">Оценочные услуги для населения</h3>
                     <ul class="company-services__list">
@@ -330,7 +355,7 @@
                         <li class="company-services__item company-services__icon-search">Работаем с физическими и юридическими лицами</li>
                     </ul>
                 </div>
-                
+
                 <div class="company-services">
                     <h3 class="company-services__title">Оценочные услуги для бизнеса</h3>
                     <ul class="company-services__list">
@@ -343,7 +368,7 @@
                         <li class="company-services__item company-services__icon-7b">Оценка незавершенного строительства</li>
                     </ul>
                 </div>
-                
+
                 <div class="advantages">
                     <h3 class="advantages__title">Почему выбирают нас</h3>
                     <ul class="advantages__list">
@@ -359,15 +384,93 @@
                         <li class="advantages__item advantages__icon-4">Завершающий этап оценки недвижемого имущества заключается в согласовании результатов полученных всеми подходами. Определяется вес каждого подхода, применяются финальные корректировки, итог - рыночная стоимость недвижимости на дату оценки.</li>
                     </ul>
                 </div>
-                
-            </div>
-            
-        </div>
-        
-        </main>
-        
-    
 
+                <h3 class="page-title">Оценка для сделки купли-продажи</h3>
+
+                <div class="cost">
+                    <h3 class="cost__title">Прайс 1</h3>
+                    <ul class="cost__list">
+                        <li class="cost__items">
+                            <div class="cost__name">Объект оценки</div>
+                            <div class="cost__descr">Офисное помещение</div>
+                        </li>
+                        <li class="cost__items">
+                            <div class="cost__name">Стоимость</div>
+                            <div class="cost__descr">10 000 Р</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="cost">
+                    <h3 class="cost__title">Прайс 1</h3>
+                    <ul class="cost__list">
+                        <li class="cost__items">
+                            <div class="cost__name">Объект оценки</div>
+                            <div class="cost__descr">Офисное помещение</div>
+                        </li>
+                        <li class="cost__items">
+                            <div class="cost__name">Срок выполнения</div>
+                            <div class="cost__descr">25 рабочих дних</div>
+                        </li>
+                        <li class="cost__items">
+                            <div class="cost__name">Стоимость</div>
+                            <div class="cost__descr">10 000 Р</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="docs">
+                    <h3 class="docs__title">Документы необходимые для оценки</h3>
+                    <ul class="docs__list">
+                        <li class="docs__item">Паспорт</li>
+                        <li class="docs__item">Свидетельство о рождении</li>
+                        <li class="docs__item">ИНН</li>
+                        <li class="docs__item">Загран паспорт</li>
+                    </ul>
+                </div>
+
+                <div class="form">
+                    <h3 class="form__title">Возможен срочный выезд на осмотр. Оценка недвижимости в короткие сроки</h3>
+                    <div class="form__body">
+                        <form action="#" method="post">
+                            <input type="text" name="user-name" id="name" placeholder="Имя">
+                            <input type="tel" name="user-phone" id="phone" placeholder="Телефон">
+                            <input type="email" name="user-email" id="email" placeholder="E-mail">
+                            <textarea name="message" id="mess" cols="10" rows="10" placeholder="Сообщение"></textarea>
+                            <button type="submit" class="btn send-btn" value="Отправить">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+       <div class="footer__logo"></div>
+       
+       <ul class="footer__list">
+           <li class="footer__item">Московская служба оценки</li>
+           <li class="footer__item">+ 7 (495) 760-76-47</li>
+       </ul>
+       
+       <ul class="footer__contacts">
+           <li class="footer__contacts-item">Контакты</li>
+           <li class="footer__contacts-item">Адрес: г. Москва, ул. Шувалова, д.6</li>
+           <li class="footer__contacts-item"><a href="mailto:info@statisticgroup.ru"></a>Email: info@statisticgroup.ru</li>
+       </ul>
+       
+       <div class="social">
+           <span class="social__title">Мы в соц сетях</span>
+           <ul class="social__list">
+           <li class="social__item">fb</li>
+           <li class="social__item">vk</li>
+           <li class="social__item">tw</li>
+       </ul>
+       </div>
+       
+    </footer>
+
+<script src="js/script.js"></script>
 </body>
 
 </html>
