@@ -1,0 +1,88 @@
+.nav-left {
+    max-width: 362px;
+	background: #f2f1ef;
+    
+    &__top {
+        background: #ebe9e6;
+        padding-top: 30px;
+        padding-left: 30px;
+        border-top: 1px solid #d8d8d8;
+        border-bottom: 1px solid #d8d8d8;
+    }
+    
+    & a + ul {
+        display: none;
+    }
+    
+//    & a.active + ul {
+//        display: block;
+//    }
+    
+    &__medium {
+        background: #ebe9e6;
+        margin-left: 20px;
+//        & > li {
+//            list-style: square;
+//        }
+    }
+    
+    &__click {
+//        padding-top: 30px;
+//        padding-left: 30px;
+        & > a {
+            @include rob-bold(20px, 26px);
+            text-transform: uppercase;
+            color: #444444;
+        }
+    }
+    
+    &__item {
+        position: relative;
+        list-style: square;
+        
+        &--active {
+            list-style: none;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                top: 11px;
+                left: -17px;
+                width: 8px;
+                height: 8px;
+                background: url("/img/circle-color.png") no-repeat 50% 50%;
+            }
+            
+//            list-style: square;
+        }
+        
+        & > a {
+            @include ops-reg(14px, 32px);
+            color: #3d3d3d;
+        }
+        
+        
+    }
+    
+    &__sub-item {
+        & > a {
+            @include ops-reg(14px, 16px);
+            position: relative;
+            color: #3d3d3d;
+            padding-left: 30px;
+        }
+        
+        &--current {
+            &::before {
+                position: absolute;
+                content: "";
+                top: 38px;
+                left: 0;
+                width: 15px;
+                height: 7px;
+                background: url("/img/arr-for-menu.png") no-repeat 50% 50%;
+            }
+            
+        }
+    }
+}

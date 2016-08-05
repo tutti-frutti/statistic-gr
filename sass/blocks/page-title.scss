@@ -1,0 +1,26 @@
+.page-title {
+	@include rob-bold(50px, 60px);
+    position: relative;
+    text-transform: uppercase;
+    color: #444444;
+    
+    &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 440px;
+        width: 57px;
+        height: 51px;
+        background: url("/img/page-icon-1.png") no-repeat 50% 50%;
+    }
+    
+    &::after {
+        position: absolute;
+        content: "";
+        top: 25px;
+        right: 25px;
+        width: 404px;
+        height: 3px;
+        background: url("/img/line-blue.png") no-repeat 50% 50%;
+    }
+}

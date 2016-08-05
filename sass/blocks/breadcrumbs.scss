@@ -1,0 +1,14 @@
+.breadcrumbs {
+    margin: 25px 0 70px;
+    
+    &__item {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    &__link {
+        @include rob-med(14px, 23px);
+        color: #adadad;
+    }
+    
+}

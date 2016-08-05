@@ -1,0 +1,106 @@
+.top-nav {
+	background: url("/img/header-bg-2.jpg") no-repeat 50% 50%;
+    min-height: 95px;
+    line-height: 95px;
+    
+    &__list {
+        max-width: 1162px;
+        margin: 0 auto;
+        font-size: 0;
+    }
+    
+    &__item {
+        @include dinpro-reg(12px, 20px);
+        display: inline-block;
+        position: relative;
+        height: 34px;
+        padding-top: 10px;
+        line-height: normal;
+        vertical-align: middle;
+        text-align: center;
+        text-transform: uppercase;
+        background-image: linear-gradient(to bottom, #f8f8f8, #d6d6d6);
+        
+        & a {
+            color: #a5a6a6;
+        }
+        
+        &::after {
+                position: absolute;
+                content: "";
+                top: 0;
+                right: -15px;
+                width: 25px;
+                height: 35px;
+                background: url("/img/navs/arr2.png") no-repeat 50% 50%;
+                z-index: 1;
+            }
+        
+        &--decor-1 {
+            position: relative;
+//            width: 220px;
+            width: 19%;
+            text-align: center;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                top: -1px;
+                left: -4px;
+                width: 20px;
+                height: 35px;
+                background: url("/img/navs/back3.png") no-repeat 50% 50%;
+            }
+        }
+        
+        &--decor-2 {
+            position: relative;
+//            width: 220px;
+            width: 19%;
+        }
+        
+        &--decor-3 {
+            position: relative;
+//            width: 220px;
+            width: 19%;
+        }
+        
+        &--decor-4 {
+            position: relative;
+            width: 160px;
+        }
+        
+        &--decor-5 {
+            position: relative;
+//            width: 160px;
+            width: 14%;
+        }
+        
+        &--decor-6 {
+//            width: 160px;
+            width: 14%;
+            position: relative;
+        }
+        
+        &--active {
+            position: relative;
+            background-image: linear-gradient(to bottom, #00d9ff, #00affb);
+            
+            & a {
+                color: #fff;
+            }
+            
+            &::after {
+                position: absolute;
+                content: "";
+                top: -1px;
+                right: -19px;
+                width: 20px;
+                height: 35px;
+                background: url("/img/navs/color-arr3.png") no-repeat 50% 50%;
+                z-index: 1;
+            }
+        }
+        
+        }
+    }

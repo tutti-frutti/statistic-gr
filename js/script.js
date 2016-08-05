@@ -9,3 +9,19 @@ $('.select__item').click(function(){
 });
 
 //slideDown
+
+$('.nav-left').on('click','.sub-true',function(e){
+    var $wrap = $(this).closest('ul');
+   
+    if($(this).hasClass('active')){
+        $(this).removeClass('active');
+        $(this).siblings('ul').slideUp();
+    } else{
+        $wrap.find('.sub-true').remove('active');
+        $wrap.find('ul').slideUp();
+        
+         $(this).addClass('active');
+         $(this).siblings('ul').slideDown();
+    }
+    e.preventDefault();
+});
