@@ -21,3 +21,11 @@
     font-size: $font-size;
     line-height: $line-height;
 }
+
+@mixin rob-norm($font-size, $line-height) {
+    font-family: "Roboto";
+    font-weight: normal;
+    font-style: normal;
+    font-size: $font-size;
+    line-height: $line-height;
+}
