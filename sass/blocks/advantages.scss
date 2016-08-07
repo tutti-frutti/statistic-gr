@@ -1,0 +1,103 @@
+.advantages {
+    
+    &__title {
+        @include rob-bold(38px, 60px);
+        position: relative;
+        text-transform: uppercase;
+        color: #444444;
+        
+        &::before {
+            position: absolute;
+            content: "";
+            top: 25px;
+            right: 20px;
+            width: 260px;
+            height: 3px;
+            background: url("/img/line-blue-short.png") no-repeat center;
+        }
+    }
+    
+    &__list {
+        @include ops-reg(17px, 28px);
+        max-width: 670px;
+        padding-left: 90px;
+        color: #2d2c2c;
+    }
+    
+    &__item-1 {
+        position: relative;
+        margin-bottom: 55px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: -70px;
+            width: 53px;
+            height: 53px;
+            background: url("/img/numb-1.png") no-repeat center;
+        }
+    }
+    
+    &__item-2 {
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: -70px;
+            width: 53px;
+            height: 53px;
+            background: url("/img/numb-2.png") no-repeat center;
+        }
+    }
+    
+    &__item-3 {
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: -70px;
+            width: 53px;
+            height: 53px;
+            background: url("/img/numb-3.png") no-repeat center;
+        }
+    }
+    
+    &__sub-list {
+        margin: 20px 0;
+        padding-left: 50px;
+    }
+    
+    &__sub-item {
+        position: relative;
+        margin-bottom: 20px;
+        
+        &::before {
+            position: absolute;
+            content: "";
+            top: 11px;
+            left: -30px;
+            width: 21px;
+            height: 7px;
+            background: url("/img/arr-for-menu-white.png") no-repeat 0 0;
+        }
+            
+    }
+    
+    &__item-4 {
+        position: relative;
+        margin-bottom: 40px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 10px;
+            left: -70px;
+            width: 53px;
+            height: 53px;
+            background: url("/img/numb-4.png") no-repeat center;
+        }
+    }
+}

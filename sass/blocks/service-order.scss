@@ -1,0 +1,59 @@
+.service {
+    margin-left: 27px;
+    margin-bottom: 30px;
+    font-size: 0;
+    border: 5px solid #edf2f3;
+    
+    &__img {
+        display: inline-block;
+        width: 50%;
+        
+        &img {
+            max-width: 100%;
+        }
+    }
+    
+    &__order {
+        display: inline-block;
+        min-height: 320px;
+        width: 50%;
+        vertical-align: top;
+        background: url("/img/foto-bg.jpg") no-repeat center;
+    }
+    
+    &__title {
+        @include ops-bold(14px, 21px);
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        letter-spacing: 4px;
+        
+        &::before {
+            position: absolute;
+            content: "";
+            top: 35px;
+            left: 50%;
+            margin-left: -11px;
+            width: 22px;
+            height: 1px;
+            background: url("/img/left-column/white-line.png") no-repeat center;
+        }
+    }
+    
+    &__descr {
+        @include ops-reg(15px, 24px);
+        margin-bottom: 40px;
+        padding: 0 50px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    &__btn {
+        width: 310px;
+        margin: 0 auto;
+    }
+    
+}

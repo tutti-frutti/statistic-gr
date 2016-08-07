@@ -1,0 +1,59 @@
+.special-offer {
+    max-width: 355px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    background: #007fff;
+    color: #fff;
+    
+    &__top {
+        @include ops-bold(14px, 21px);
+        position: relative;
+        margin-bottom: 65px;
+        padding-top: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        
+        &::before {
+            position: absolute;
+            content: "";
+            top: 70px;
+            left: 50%;
+            margin-left: -11px;
+            width: 22px;
+            height: 1px;
+            background: url("/img/left-column/white-line.png") no-repeat center;
+        }
+    }
+    
+    &__title {
+        @include rob-bold(22px, 28px);
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    &__price {
+        @include rob-bold(47px, 32px);
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    
+    &__descr {
+        @include ops-reg(16px, 22px);
+        padding: 0 62px;
+        margin-bottom: 45px;
+        text-align: center;
+        color: #eeeeee;
+    }
+    
+    &__btn {
+        width: 270px;
+        margin: 0 auto;
+//        margin-bottom: 40px;
+    }
+    
+    &__btn-wrapper {
+        padding-bottom: 40px;
+    }
+}

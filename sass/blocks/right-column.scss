@@ -1,5 +1,12 @@
 .right-column {
 	display: inline-block;
     max-width: 771px;
+    
     vertical-align: top;
+    
+    &__title {
+        @include rob-med(23px, 17px);
+        margin-bottom: 30px;
+        color: #8a8178;
+    }
 }

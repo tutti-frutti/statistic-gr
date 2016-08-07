@@ -1,12 +1,13 @@
 .btn {
     @include rob-norm(17px, 20px);
+//    margin: 0 auto;
     display: block;
-    width: 215px;
+//    width: 215px;
     height: 45px;
     padding-top: 10px;
     text-align: center;
     border: 1px solid #d9efff;
     border-radius: 50px;
-    background: transparent;
+//    background: transparent;
     color: #fff;
 }

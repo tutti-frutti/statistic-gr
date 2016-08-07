@@ -1,0 +1,52 @@
+.cost {
+    margin-bottom: 70px;
+    
+    &__title {
+        @include ops-bold(18px, 21px);
+        margin-bottom: 20px;
+        color: #252424;
+        text-transform: uppercase;
+        &--mt {
+            margin-top: 65px;
+        }
+    }
+    
+    &__items {
+        display: inline-block;
+        width: 49%;
+        margin-left: -5px;
+        font-size: 0;
+        &--width {
+            width: 33%;
+        }
+        
+        
+    }
+    
+    &__name {
+        @include rob-med(14px, 28px);
+        height: 45px;
+        line-height: 45px;
+        border: 1px solid #000;
+        border-bottom: 0;
+        color: #427386;
+        background: #f6f4f2;
+        text-align: center;
+            &--color {
+                background: #d6e5ec;
+        }
+    }
+    
+    &__descr {
+        @include rob-bold(18px, 60px);
+        height: 90px;
+        line-height: 90px;
+        border: 1px solid #000;
+        color: #427386;
+        background: #f6f4f2;
+        text-align: center;
+            &--color {
+                background: #d6e5ec;
+    }
+}
+}

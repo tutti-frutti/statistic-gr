@@ -1,0 +1,98 @@
+.ask-question {
+    position: relative;
+    max-width: 354px;
+    margin-bottom: 55px;
+    border: 2px solid #3a6b7e;
+    
+    &::before {
+         position: absolute;
+         content: "";
+         top: -8px;
+         left: -8px;
+         width: 51px;
+         height: 51px;
+         background: url("/img/left-column/left-top.png") no-repeat center;
+         z-index: 1;
+        }
+    
+    &::after {
+         position: absolute;
+         content: "";
+         top: -8px;
+         right: -8px;
+         width: 51px;
+         height: 51px;
+         background: url("/img/left-column/right-top.png") no-repeat center;
+         z-index: 1;
+        }
+    
+    &__wrapper {
+        position: relative;
+        max-width: 342px;
+        margin: 5px auto;
+        border: 6px solid #f6f4f2;
+        text-align: center;
+        
+        &::before {
+            position: absolute;
+            content: "";
+            bottom: -19px;
+            left: -18px;
+            width: 51px;
+            height: 51px;
+            background: url("/img/left-column/left-bottom.png") no-repeat center;
+        }
+        
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: -19px;
+            right: -18px;
+            width: 51px;
+            height: 51px;
+            background: url("/img/left-column/right-bottom.png") no-repeat center;
+        }
+    }
+    
+    &__title {
+        @include rob-norm(28px, 32px);
+        padding: 40px 50px 30px 50px;
+        color: #8a8178;
+    }
+    
+    &__img {
+        margin-bottom: 25px;
+    }
+    
+    &__name {
+        @include ops-bold(18px, 21px);
+        position: relative;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        
+        &::before {
+            position: absolute;
+            content: "";
+            top: 35px;
+            left: 50%;
+            margin-left: -27px;
+            width: 54px;
+            height: 2px;
+            background: url("/img/left-column/color-line.png") no-repeat center;
+        }
+    }
+    
+    &__position {
+        @include ops-reg(16px, 26px);
+        margin-bottom: 30px;
+        color: #2d2c2c;
+    }
+    
+    &__btn {
+        width: 271px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        background: #3285ff;
+    }
+}

@@ -91,6 +91,7 @@
             <div class="left-column">
 
                 <nav class="nav-left">
+                    <div class="nav-left__wrapper">
 
                     <ul class="nav-left__top">
                         <li class="nav-left__click">
@@ -100,8 +101,8 @@
                                    <a class="active sub-true" href="#">Ключевые этапы основания</a>
                                     <ul class="nav-left__bottom">
                                         <li class="nav-left__sub-item  "><a href="#">Предпосылки</a></li>
-                                        <li class="nav-left__sub-item  "><a href="#">Первые клиенты</a></li>
-                                        <li class="nav-left__sub-item  nav-left__sub-item--current"><a href="#">Квартальные отчеты</a></li>
+                                        <li class="nav-left__sub-item  nav-left__sub-item--current"><a href="#">Первые клиенты</a></li>
+                                        <li class="nav-left__sub-item  "><a href="#">Квартальные отчеты</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-left__item  "><a href="#">Сооснователи</a></li>
@@ -277,16 +278,19 @@
                             </ul>
                         </li>
                     </ul>
-                </nav>
+                </div>
+            </nav>
 
                 <div class="ask-question">
+                   <div class="ask-question__wrapper">
                     <h3 class="ask-question__title">Задать вопрос эксперту</h3>
                     <ul class="ask-question__list">
-                        <li class="ask-question__item"><img src="" alt="Наш эксперт"></li>
-                        <li class="ask-question__item">Дмитрий В.</li>
-                        <li class="ask-question__item">Специалист службы оценки</li>
+                        <li class="ask-question__img"><img src="/img/left-column/exp-img.png" alt="Наш эксперт"></li>
+                        <li class="ask-question__name">Дмитрий В.</li>
+                        <li class="ask-question__position">Специалист службы оценки</li>
                     </ul>
-                    <a href="#" class="btn get-consult">Получить консультацию</a>
+                    <a href="#" class="btn ask-question__btn">Получить консультацию</a>
+                    </div>
                 </div>
 
                 <div class="special-offer">
@@ -294,31 +298,33 @@
                     <h3 class="special-offer__title">Оценка стоимости недвижимости</h3>
                     <p class="special-offer__price">10 000 P</p>
                     <p class="special-offer__descr">За более подробной информацией обращайтесь к нашим специалистам</p>
-                    <a href="#" class="btn get-consult">Заказать оценку</a>
+                    <div class="special-offer__btn-wrapper">
+                    <a href="#" class="btn special-offer__btn">Заказать оценку</a>
+                    </div>
                 </div>
 
                 <div class="news">
                     <div class="news__wrapper">
                         <p class="news__name">Главные новости</p>
-                        <ul class="news__list-img">
-                            <li class="news__items news__img"><img src="" alt="Новости"></li>
+                        <ul class="news__list">
+                            <li class="news__items news__img"><img src="/img/left-column/news.jpg" alt="Новости"></li>
                             <li class="news__items news__descr"><a class="news__link" href="#">Оценивание квартир - ныне востребованный вид оценки недвижимости</a></li>
-                            <li class="news__items news__date">Авг 25, 2015</li>
+                            <li class="news__date">Авг 25, 2015</li>
                         </ul>
 
                         <ul class="news__list">
                             <li class="news__items news__descr"><a class="news__link" href="#">Поэтому так важно не запутаться во множестве специфических терминов</a></li>
-                            <li class="news__items news__date">Авг 25, 2015</li>
+                            <li class="news__date">Авг 25, 2015</li>
                         </ul>
 
                         <ul class="news__list">
                             <li class="news__items news__descr"><a class="news__link" href="#">Например, кто из россиян, далеких от права, знает, что Ваша квартира</a></li>
-                            <li class="news__items news__date">Авг 25, 2015</li>
+                            <li class="news__date">Авг 25, 2015</li>
                         </ul>
 
                         <ul class="news__list">
                             <li class="news__items news__descr"><a class="news__link" href="#">И что она обладает всеми присущими именно вещественной недвижимости</a></li>
-                            <li class="news__items news__date">Авг 25, 2015</li>
+                            <li class="news__date">Авг 25, 2015</li>
                         </ul>
 
                     </div>
@@ -329,66 +335,66 @@
             <div class="right-column">
                 <h3 class="right-column__title">Эксперты Statistic Group оцент любой объект недвижимости</h3>
 
-                <div class="service-preview">
-                    <div class="service-preview__img"><img src="" alt="Оценка"></div>
-
-                    <div class="service-order">
-                        <ul class="service-order__list">
-                            <li class="service-order__item service-order__title"></li>
-                            <li class="service-order__item service-order__descr"></li>
-                            <li class="service-order__item"><a href="#" class="btn get-consult">Заказать оценку</a></li>
-                        </ul>
+                <div class="service">
+                    <div class="service__img"><img src="/img/page-img.jpg" alt="Оценка">
                     </div>
 
+                    <div class="service__order">
+                        <ul class="service__list">
+                            <li class="service__title">Название услуги</li>
+                            <li class="service__descr">Оценка стоимости недвижимости включает: определение стоимости права собственности или иных прав, например, права аренды, права пользования и т.д.</li>
+                            <li class="service-order__item"><a href="#" class="btn service__btn">Заказать оценку</a></li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="service-description">
-                    <p class="service-description__text"><strong>Оценка стоимости недвижимости</strong> - процесс определения оценщиком рыночной стоимости объекта недвижимости</p>
-                    <p class="service-description__text">Оценка стоимости недвижимости включает: определение стоимости права собственности или иных прав, например, права аренды, права пользования и т.д. в отношении различных объектов недвижимости.</p>
-                    <p class="service-description__text">Проведение оценки недвижимости: оценщику приходится принимать во внимание много факторов при оценко недвижимости в зависимости от типа объекта оценки (жилой, коммерческой), назначения (офисной, торговой, складской, производственной), площади помещений.</p>
+                <div class="service-descr">
+                    <p class="service-descr__text"><strong>Оценка стоимости недвижимости</strong> - процесс определения оценщиком рыночной стоимости объекта недвижимости</p>
+                    <p class="service-descr__text">Оценка стоимости недвижимости включает: определение стоимости права собственности или иных прав, например, права аренды, права пользования и т.д. в отношении различных объектов недвижимости.</p>
+                    <p class="service-descr__text">Проведение оценки недвижимости: оценщику приходится принимать во внимание много факторов при оценко недвижимости в зависимости от типа объекта оценки (жилой, коммерческой), назначения (офисной, торговой, складской, производственной), площади помещений.</p>
                 </div>
 
                 <div class="company-services">
                     <h3 class="company-services__title">Оценочные услуги для населения</h3>
                     <ul class="company-services__list">
-                        <li class="company-services__item company-services__icon-1p">Оценка квартиры для ипотеки</li>
-                        <li class="company-services__item company-services__icon-2p">Оценка земельного участка с домом</li>
-                        <li class="company-services__item company-services__icon-3p">Оценка домовладения или коттеджа</li>
-                        <li class="company-services__item company-services__icon-4p">Оценка таунхауса или другой загородной недвижимости</li>
-                        <li class="company-services__item company-services__icon-search">Работаем с физическими и юридическими лицами</li>
+                        <li class="company-services__item company-services--icon-1p">Оценка квартиры для ипотеки</li>
+                        <li class="company-services__item company-services--icon-2p">Оценка земельного участка с домом</li>
+                        <li class="company-services__item company-services--icon-3p">Оценка домовладения или коттеджа</li>
+                        <li class="company-services__item company-services--icon-4p">Оценка таунхауса или другой загородной недвижимости</li>
+                        <li class="company-services__icon-search"><p class="company-services__icon-text">Работаем с физическими и юридическими лицами</p></li>
                     </ul>
                 </div>
 
                 <div class="company-services">
                     <h3 class="company-services__title">Оценочные услуги для бизнеса</h3>
                     <ul class="company-services__list">
-                        <li class="company-services__item company-services__icon-1b">Оценка офисных помещений</li>
-                        <li class="company-services__item company-services__icon-2b">Оценка торговых помещений</li>
-                        <li class="company-services__item company-services__icon-3b">Оценка складских помещений</li>
-                        <li class="company-services__item company-services__icon-4b">Оценка торговых центров</li>
-                        <li class="company-services__item company-services__icon-5b">Оценка бизнес центров</li>
-                        <li class="company-services__item company-services__icon-6b">Оценка земельных участков</li>
-                        <li class="company-services__item company-services__icon-7b">Оценка незавершенного строительства</li>
+                        <li class="company-services__item company-services--icon-1b">Оценка офисных помещений</li>
+                        <li class="company-services__item company-services--icon-2b">Оценка торговых помещений</li>
+                        <li class="company-services__item company-services--icon-3b">Оценка складских помещений</li>
+                        <li class="company-services__item company-services--icon-4b">Оценка торговых центров</li>
+                        <li class="company-services__item company-services--icon-5b">Оценка бизнес центров</li>
+                        <li class="company-services__item company-services--icon-6b">Оценка земельных участков</li>
+                        <li class="company-services__item company-services--icon-7b">Оценка незавершенного строительства</li>
                     </ul>
                 </div>
 
                 <div class="advantages">
                     <h3 class="advantages__title">Почему выбирают нас</h3>
                     <ul class="advantages__list">
-                        <li class="advantages__item advantages__icon-1"><strong>Сбор характеристик</strong> объекта недвижимости подлежащего оценке и сопоставимых аналогов - лишь первый этап при определении рыночной стоимости.</li>
-                        <li class="advantages__item advantages__icon-2">На втором этапе оценщик учитывает конструктивные элементы <strong>объекта и рассматривает отличные качества сопоставимых объектов недвижимости для внесения необходимых корректировок.</strong></li>
-                        <li class="advantages__item advantages__icon-3">Определив тип здания или помещения, рассматривается вопрос о применимости подходов.
+                        <li class="advantages__item-1"><strong>Сбор характеристик</strong> объекта недвижимости подлежащего оценке и сопоставимых аналогов - лишь первый этап при определении рыночной стоимости.</li>
+                        <li class="advantages__item-2">На втором этапе оценщик учитывает конструктивные элементы <strong>объекта и рассматривает отличные качества сопоставимых объектов недвижимости для внесения необходимых корректировок.</strong></li>
+                        <li class="advantages__item-3">Определив тип здания или помещения, рассматривается вопрос о применимости подходов.
                             <ul class="advantages__sub-list">
                                 <li class="advantages__sub-item"><strong>Сравнительный подход</strong> отражает рыночные оферты по недвижимости.</li>
                                 <li class="advantages__sub-item"><strong>Затратный подход</strong> применяется для определения затрат на замещение объекта недвижимости</li>
                                 <li class="advantages__sub-item"><strong>Доходный подход</strong> применим в случаях, когда коммерческая недвижимость в состоянии приносить постоянный доход и назначение не противоречит фактическому использованию.</li>
                             </ul>
                         </li>
-                        <li class="advantages__item advantages__icon-4">Завершающий этап оценки недвижемого имущества заключается в согласовании результатов полученных всеми подходами. Определяется вес каждого подхода, применяются финальные корректировки, итог - рыночная стоимость недвижимости на дату оценки.</li>
+                        <li class="advantages__item-4">Завершающий этап оценки недвижемого имущества заключается в согласовании результатов полученных всеми подходами. Определяется вес каждого подхода, применяются финальные корректировки, итог - рыночная стоимость недвижимости на дату оценки.</li>
                     </ul>
                 </div>
 
-                <h3 class="page-title">Оценка для сделки купли-продажи</h3>
+                <h3 class="planshet-icon">Оценка для сделки купли-продажи</h3>
 
                 <div class="cost">
                     <h3 class="cost__title">Прайс 1</h3>
@@ -398,26 +404,26 @@
                             <div class="cost__descr">Офисное помещение</div>
                         </li>
                         <li class="cost__items">
-                            <div class="cost__name">Стоимость</div>
-                            <div class="cost__descr">10 000 Р</div>
+                            <div class="cost__name  cost__name--color">Стоимость</div>
+                            <div class="cost__descr  cost__descr--color">10 000 Р</div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="cost">
-                    <h3 class="cost__title">Прайс 1</h3>
+                    <h3 class="cost__title  cost__title--mt">Прайс 1</h3>
                     <ul class="cost__list">
-                        <li class="cost__items">
+                        <li class="cost__items  cost__items--width">
                             <div class="cost__name">Объект оценки</div>
                             <div class="cost__descr">Офисное помещение</div>
                         </li>
-                        <li class="cost__items">
+                        <li class="cost__items  cost__items--width">
                             <div class="cost__name">Срок выполнения</div>
                             <div class="cost__descr">25 рабочих дних</div>
                         </li>
-                        <li class="cost__items">
-                            <div class="cost__name">Стоимость</div>
-                            <div class="cost__descr">10 000 Р</div>
+                        <li class="cost__items  cost__items--width">
+                            <div class="cost__name  cost__name--color">Стоимость</div>
+                            <div class="cost__descr  cost__descr--color">10 000 Р</div>
                         </li>
                     </ul>
                 </div>
@@ -425,10 +431,10 @@
                 <div class="docs">
                     <h3 class="docs__title">Документы необходимые для оценки</h3>
                     <ul class="docs__list">
-                        <li class="docs__item">Паспорт</li>
-                        <li class="docs__item">Свидетельство о рождении</li>
-                        <li class="docs__item">ИНН</li>
-                        <li class="docs__item">Загран паспорт</li>
+                        <li class="docs__item">  Паспорт</li>
+                        <li class="docs__item">  Свидетельство о рождении</li>
+                        <li class="docs__item">  ИНН</li>
+                        <li class="docs__item">  Загран паспорт</li>
                     </ul>
                 </div>
 

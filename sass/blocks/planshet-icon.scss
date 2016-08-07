@@ -1,0 +1,19 @@
+.planshet-icon {
+    @include ops-bold(18px, 21px);
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 80px;
+    color: #252424;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    
+    &::before {
+        position: absolute;
+        content: "";
+        top: -12px;
+        left: 25px;
+        width: 39px;
+        height: 46px;
+        background: url("/img/planshet.png") no-repeat center;
+    }
+}
