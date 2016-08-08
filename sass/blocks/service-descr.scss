@@ -3,12 +3,12 @@
     
     &__text {
         @include ops-reg(15px, 24px);
-        width: 670px;
+        max-width: 670px;
         margin-bottom: 10px;
         color: #2d2c2c;
         
         &:first-child {
-            width: 639px;
+            max-width: 639px;
             margin-bottom: 31px;
         }
         

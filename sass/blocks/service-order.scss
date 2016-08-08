@@ -4,11 +4,20 @@
     font-size: 0;
     border: 5px solid #edf2f3;
     
+    @media #{$tablet} {
+            margin-left: 5px;
+        }
+    
     &__img {
         display: inline-block;
         width: 50%;
         
-        &img {
+        @media #{$tablet} {
+//            display: block;
+            width: auto;
+        }
+        
+        & img {
             max-width: 100%;
         }
     }
@@ -19,6 +28,10 @@
         width: 50%;
         vertical-align: top;
         background: url("/img/foto-bg.jpg") no-repeat center;
+        
+        @media #{$tablet} {
+            width: auto;
+        }
     }
     
     &__title {
@@ -49,6 +62,10 @@
         padding: 0 50px;
         text-align: center;
         color: #fff;
+        
+        @media #{$tablet} {
+            padding: 0 25px;
+        }
     }
     
     &__btn {

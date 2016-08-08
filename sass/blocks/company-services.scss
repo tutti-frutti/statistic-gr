@@ -2,6 +2,10 @@
     margin-left: 27px;
     margin-bottom: 66px;
     
+    @media #{$tablet} {
+            text-align: center;
+        }
+    
     &__title {
         @include ops-bold(18px, 21px);
         margin-bottom: 34px;
@@ -25,6 +29,10 @@
         text-transform: uppercase;
         color: #3d3d3d;
         
+        @media #{$tablet} {
+            margin-bottom: 55px;    
+        }
+        
         &::before {
             position: absolute;
             content: "";
@@ -40,6 +48,12 @@
         position: relative;
         margin-left: 13px;
         margin-right: 39px;
+        
+        @media #{$tablet} {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
         &::after {
             position: absolute;
             content: "";
@@ -58,6 +72,11 @@
             padding-left: 35px;
             padding-right: 35px;
             margin-right: 25px;
+            
+            @media #{$tablet} {
+            margin-right: 0;
+        }
+            
         &::after {
             position: absolute;
             content: "";
@@ -95,6 +114,11 @@
             padding-right: 25px;
             margin-top: 22px;
             margin-left: 12px;
+        
+        @media #{$tablet} {
+            margin-left: 0;
+            margin-top: 0;
+        }
         &::after {
             position: absolute;
             content: "";
@@ -117,6 +141,11 @@
         line-height: 110px;
         text-align: center;
         background: #f8f7f6;
+        
+        @media #{$tablet} {
+            margin-left: 0;
+            margin-top: 0;
+        }
     }
     
     &__icon-text {
@@ -128,6 +157,11 @@
         padding: 0 150px;
         color: #3a6b7e;
         
+        @media #{$tablet} {
+            padding: 0;
+            margin-right: 0;
+        }
+        
         &::before {
             position: absolute;
             content: "";
@@ -136,6 +170,11 @@
             width: 34px;
             height: 34px;
             background: url("/img/icon-search.png") no-repeat center;
+            
+            @media #{$tablet} {
+            top: 25px;
+            left: 70px;    
+        }
         }
     }
     
@@ -149,6 +188,12 @@
             margin-left: 12px;
             margin-right: 32px;
             margin-bottom: 38px;
+        
+        @media #{$tablet} {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
         &::after {
             position: absolute;
             content: "";
@@ -167,6 +212,11 @@
             padding-left: 25px;
             padding-right: 25px;
             margin-right: 33px;
+        
+        @media #{$tablet} {
+            margin-right: 0;
+            margin-top: 45px;
+        }
         &::after {
             position: absolute;
             content: "";
@@ -205,6 +255,13 @@
             margin-left: 12px;
             margin-right: 32px;
             margin-bottom: 60px;
+        
+        @media #{$tablet} {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+        }
+        
         &::after {
             position: absolute;
             content: "";
@@ -223,6 +280,12 @@
             padding-left: 25px;
             padding-right: 25px;
             margin-right: 32px;
+        
+        @media #{$tablet} {
+            margin-right: 0;
+            margin-top: 58px;
+        }
+        
         &::after {
             position: absolute;
             content: "";
@@ -241,6 +304,10 @@
             padding-left: 25px;
             padding-right: 25px;
             margin-right: 0;
+        
+        @media #{$tablet} {
+            margin-top: 20px;
+        }
         &::after {
             position: absolute;
             content: "";
@@ -259,6 +326,10 @@
             padding-left: 25px;
             padding-right: 25px;
             margin-left: 12px;
+        
+        @media #{$tablet} {
+            margin-left: 0;
+        }
         &::after {
             position: absolute;
             content: "";

@@ -7,6 +7,11 @@
     text-transform: uppercase;
     letter-spacing: 4px;
     
+    @media #{$tablet} {
+            font-size: 15px;
+            text-align: center;
+        }
+    
     &::before {
         position: absolute;
         content: "";
@@ -15,5 +20,9 @@
         width: 39px;
         height: 46px;
         background: url("/img/planshet.png") no-repeat center;
+        
+        @media #{$tablet} {
+            top: -4px;
+        }
     }
 }

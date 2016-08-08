@@ -6,12 +6,24 @@
         border-bottom: 1px solid #fff;
         min-height: 133px;
         line-height: 133px;
+        
+        @media #{$desktop} {
+            padding: 15px;
+            text-align: center;
+            line-height: 0;
+        }
     }
     
     &__bottom {
         position: relative;
         min-height: 80px;
         line-height: 80px;
+        
+        @media #{$desktop} {
+            padding: 15px;
+            text-align: center;
+            line-height: 0;
+        }
     }
     
     &__top-wrapper {
@@ -47,11 +59,20 @@
             @include rob-bold(50px, 32px);
             margin-bottom: 5px;
             color: #fff;
+            
+            @media #{$tablet} {
+                margin-bottom: 0;
+                font-size: 28px;
+            }
         }
         
         &--color {
             @include rob-med(50px, 32px);
             color: #d9efff;
+            
+            @media #{$tablet} {
+                font-size: 30px;
+            }
         }
     }
     

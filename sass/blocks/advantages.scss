@@ -8,6 +8,10 @@
         text-transform: uppercase;
         color: #444444;
         
+        @media #{$tablet} {
+            font-size: 25px;
+        }
+        
         &::before {
             position: absolute;
             content: "";
@@ -16,6 +20,11 @@
             width: 260px;
             height: 3px;
             background: url("/img/line-blue-short.png") no-repeat center;
+            
+            @media #{$tablet} {
+                top: 60px;
+                right: 55px;
+        }
         }
     }
     
@@ -25,6 +34,11 @@
         margin-left: 19px;
         padding-left: 90px;
         color: #2d2c2c;
+        
+        @media #{$tablet} {
+            font-size: 15px;
+            line-height: 25px;
+        }
     }
     
     &__item-1 {
@@ -80,7 +94,7 @@
     
     &__sub-item {
         position: relative;
-        width: 685px;
+        max-width: 685px;
 //        margin-bottom: 12px;
         
         &:first-child {

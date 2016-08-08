@@ -8,6 +8,7 @@
     border-top: 1px solid transparent;
     background: url("/img/form-bg.jpg");
     
+    
     &::before {
         position: absolute;
         content: "";
@@ -17,21 +18,34 @@
         height: 202px;
         background: url("/img/form-bg-calc.png") no-repeat center;
         
+        @media #{$tablet} {
+            background: none;
+        }
+        
     }
     
     &__title {
         @include rob-bold(20px, 20px);
-        width: 430px;
+        max-width: 430px;
         margin-top: 45px;
         margin-left: 90px;
         letter-spacing: 1px;
         color: #fff;
+        
+        @media #{$tablet} {
+            margin-left: 20px;
+            font-size: 17px;
+        }
     }
     
     &__body {
         width: 305px;
         margin-top: 30px;
         margin-left: 85px;
+        
+        @media #{$tablet} {
+            margin-left: 20px;
+        }
     }
     
     &__send {

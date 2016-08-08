@@ -2,6 +2,15 @@
 	display: inline-block;
     max-width: 802px;
     
+    @media #{$tablet} {
+        max-width: 382px;
+    }
+    
+    @media #{$tablet} {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    
     vertical-align: top;
     
     &__title {
@@ -10,5 +19,9 @@
         padding-left: 34px;
         margin-bottom: 30px;
         color: #8a8178;
+        
+        @media #{$tablet} {
+            line-height: 24px;
+        }
     }
 }

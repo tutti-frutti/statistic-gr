@@ -1,10 +1,15 @@
 .footer {
-    height: 215px;
+    min-height: 215px;
     line-height: 215px;
     background: #e7eaed;
     
+    @media #{$tablet} {
+        line-height: 0;
+        text-align: center;
+        }
+    
     &__wrapper {
-        width: 1162px;
+        max-width: 1162px;
         margin: 0 auto;
     }
     

@@ -18,8 +18,19 @@
         width: 49%;
         margin-left: -5px;
         font-size: 0;
+        
+        @media #{$tablet} {
+            display: block;
+            width: auto;
+            margin-bottom: 5px;
+        }
+        
         &--width {
             width: 33%;
+            
+            @media #{$tablet} {
+            width: auto;
+        }
         }
         
         

@@ -6,6 +6,12 @@
     letter-spacing: 2px;
     color: #444444;
     
+    @media #{$tablet} {
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+            }
+    
     &::before {
         position: absolute;
         content: "";
@@ -14,6 +20,10 @@
         width: 57px;
         height: 51px;
         background: url("/img/page-icon-1.png") no-repeat 50% 50%;
+        
+        @media #{$tablet} {
+            background: none;
+        }
     }
     
     &::after {
@@ -24,5 +34,9 @@
         width: 404px;
         height: 3px;
         background: url("/img/line-blue.png") no-repeat 50% 50%;
+        
+        @media #{$tablet} {
+            background: none;
+        }
     }
 }
