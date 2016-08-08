@@ -1,0 +1,15 @@
+.social {
+	display: inline-block;
+    @include ops-bold(16px, 30px);
+    margin-top: 57px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #3d3d3d;
+//    line-height: normal;
+    vertical-align: top;
+    
+    &__item {
+        display: inline-block;
+        margin-right: 5px;
+    }
+}

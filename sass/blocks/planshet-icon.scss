@@ -1,7 +1,7 @@
 .planshet-icon {
     @include ops-bold(18px, 21px);
     position: relative;
-    padding-left: 90px;
+    padding-left: 120px;
     margin-bottom: 80px;
     color: #252424;
     text-transform: uppercase;
@@ -11,7 +11,7 @@
         position: absolute;
         content: "";
         top: -12px;
-        left: 25px;
+        left: 37px;
         width: 39px;
         height: 46px;
         background: url("/img/planshet.png") no-repeat center;

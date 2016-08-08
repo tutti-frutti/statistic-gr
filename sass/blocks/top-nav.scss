@@ -3,6 +3,12 @@
     min-height: 95px;
     line-height: 95px;
     
+    @media #{$desktop} {
+        text-align: center;
+        line-height: 0;
+        background-size: cover;
+    }
+    
     &__list {
         max-width: 1162px;
         margin: 0 auto;
@@ -21,6 +27,11 @@
         text-transform: uppercase;
         background-image: linear-gradient(to bottom, #f8f8f8, #d6d6d6);
         
+        @media #{$desktop} {
+//            display: border-left: ;
+        }
+        
+        
         & a {
             color: #a5a6a6;
         }
@@ -34,13 +45,21 @@
                 height: 35px;
                 background: url("/img/navs/arr2.png") no-repeat 50% 50%;
                 z-index: 1;
+            @media #{$desktop} {
+                background: none;
+            }
+            
             }
         
         &--decor-1 {
             position: relative;
-//            width: 220px;
             width: 19%;
             text-align: center;
+            
+            @media #{$desktop} {
+                width: 250px;
+                margin: 5px;
+            }
             
             &::before {
                 position: absolute;
@@ -50,6 +69,10 @@
                 width: 20px;
                 height: 35px;
                 background: url("/img/navs/back3.png") no-repeat 50% 50%;
+                
+                @media #{$desktop} {
+                    background: none;
+                }
             }
         }
         
@@ -57,29 +80,54 @@
             position: relative;
 //            width: 220px;
             width: 19%;
+            
+            @media #{$desktop} {
+                width: 250px;
+                margin: 5px;
+            }
         }
         
         &--decor-3 {
             position: relative;
 //            width: 220px;
             width: 19%;
+            
+            @media #{$desktop} {
+                width: 250px;
+                margin: 5px;
+            }
         }
         
         &--decor-4 {
             position: relative;
             width: 160px;
+            
+            @media #{$desktop} {
+                width: 250px;
+                margin: 5px;
+            }
         }
         
         &--decor-5 {
             position: relative;
 //            width: 160px;
             width: 14%;
+            
+            @media #{$desktop} {
+                width: 250px;
+                margin: 5px;
+            }
         }
         
         &--decor-6 {
 //            width: 160px;
             width: 14%;
             position: relative;
+            
+            @media #{$desktop} {
+                width: 250px;
+                margin: 5px;
+            }
         }
         
         &--active {
@@ -99,8 +147,21 @@
                 height: 35px;
                 background: url("/img/navs/color-arr3.png") no-repeat 50% 50%;
                 z-index: 1;
+                
+                @media #{$desktop} {
+                    background: none;
+                }
             }
         }
-        
-        }
     }
+}
+
+    
+
+//.slicknav_menu {
+//    display: none;
+//    
+//    @media #{$desktop} {
+//        display: block;
+//    }
+//}

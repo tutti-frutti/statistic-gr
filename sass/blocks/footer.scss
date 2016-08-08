@@ -1,0 +1,63 @@
+.footer {
+    height: 215px;
+    line-height: 215px;
+    background: #e7eaed;
+    
+    &__wrapper {
+        width: 1162px;
+        margin: 0 auto;
+    }
+    
+    &__logo {
+        display: inline-block;
+        margin-top: 80px;
+        margin-right: 5%;
+        line-height: normal;
+        vertical-align: top;
+    }
+    
+    &__list {
+        margin-right: 3%;
+        margin-top: 57px;
+        display: inline-block;
+        
+        vertical-align: top;
+    }
+    
+    &__name {
+        @include ops-bold(16px, 30px);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #3d3d3d;
+    }
+    
+    &__tel {
+        @include ops-reg(24px, 24px);
+        text-transform: uppercase;
+        color: #3d3d3d;
+    }
+    
+    &__contacts {
+        margin-right: 8%;
+        margin-top: 57px;
+        display: inline-block;
+//        line-height: normal;
+        vertical-align: top;
+    }
+    
+    &__contacts-name {
+        @include ops-bold(16px, 30px);
+        text-transform: uppercase;
+        color: #3d3d3d;
+    }
+    
+    &__contacts-adress {
+        @include ops-reg(12px, 24px);
+        color: #3d3d3d;
+    }
+    
+    &__contacts-mail {
+        @include ops-reg(12px, 24px);
+        color: #3d3d3d;
+    }
+}

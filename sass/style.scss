@@ -1,4 +1,5 @@
 @import "mixins.scss";
+@import "variables.scss";
 
 @import "blocks/header.scss";
 @import "blocks/select.scss";
@@ -19,6 +20,9 @@
 @import "blocks/planshet-icon.scss";
 @import "blocks/cost.scss";
 @import "blocks/docs.scss";
+@import "blocks/form.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
 
 @import "global/scaffolding.scss";
 @import "global/fonts.scss";

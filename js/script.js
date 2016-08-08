@@ -25,3 +25,7 @@ $('.nav-left').on('click','.sub-true',function(e){
     }
     e.preventDefault();
 });
+
+//$(function(){
+//		$('#menu').slicknav();
+//	});

@@ -1,9 +1,11 @@
 .cost {
     margin-bottom: 70px;
+    margin-left: 42px;
     
     &__title {
         @include ops-bold(18px, 21px);
         margin-bottom: 20px;
+        padding-left: 40px;
         color: #252424;
         text-transform: uppercase;
         &--mt {

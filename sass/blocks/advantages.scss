@@ -3,14 +3,16 @@
     &__title {
         @include rob-bold(38px, 60px);
         position: relative;
+        margin-left: 40px;
+        margin-bottom: 30px;
         text-transform: uppercase;
         color: #444444;
         
         &::before {
             position: absolute;
             content: "";
-            top: 25px;
-            right: 20px;
+            top: 30px;
+            right: -8px;
             width: 260px;
             height: 3px;
             background: url("/img/line-blue-short.png") no-repeat center;
@@ -20,13 +22,15 @@
     &__list {
         @include ops-reg(17px, 28px);
         max-width: 670px;
+        margin-left: 19px;
         padding-left: 90px;
         color: #2d2c2c;
     }
     
     &__item-1 {
         position: relative;
-        margin-bottom: 55px;
+        margin-bottom: 42px;
+        padding-left: 17px;
         &::before {
             position: absolute;
             content: "";
@@ -40,7 +44,8 @@
     
     &__item-2 {
         position: relative;
-        margin-bottom: 40px;
+        margin-bottom: 25px;
+        padding-left: 17px;
         &::before {
             position: absolute;
             content: "";
@@ -55,6 +60,7 @@
     &__item-3 {
         position: relative;
         margin-bottom: 40px;
+        padding-left: 17px;
         &::before {
             position: absolute;
             content: "";
@@ -67,13 +73,23 @@
     }
     
     &__sub-list {
-        margin: 20px 0;
-        padding-left: 50px;
+        max-width: 685px;
+        margin-top: 26px;
+        padding-left: 55px;
     }
     
     &__sub-item {
         position: relative;
-        margin-bottom: 20px;
+        width: 685px;
+//        margin-bottom: 12px;
+        
+        &:first-child {
+            margin-bottom: 6px;
+        }
+        
+        &:last-child {
+            margin-bottom: 10px;
+        }
         
         &::before {
             position: absolute;
@@ -84,12 +100,15 @@
             height: 7px;
             background: url("/img/arr-for-menu-white.png") no-repeat 0 0;
         }
+        
+        
             
     }
     
     &__item-4 {
         position: relative;
-        margin-bottom: 40px;
+        margin-bottom: 44px;
+        padding-left: 16px;
         &::before {
             position: absolute;
             content: "";

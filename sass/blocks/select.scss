@@ -17,6 +17,7 @@ select {
 	display: inline-block;
     width: 230px;
     height: 90px;
+    margin-right: 5%;
     line-height: normal;
     vertical-align: middle;
 //    margin-top: 20px;
@@ -26,7 +27,7 @@ select {
         content: "";
         width: 227px;
         height: 86px;
-        top: 0;
+        top: -4px;
         left: 0;
         background: url("/img/header-moscow.png") no-repeat 20% 50%;
     }
@@ -36,15 +37,16 @@ select {
         content: "";
         width: 19px;
         height: 28px;
-        top: 25px;
-        left: 35px;
+        top: 34px;
+        left: 27px;
         background: url("/img/icon-top-place-1.png") no-repeat 20% 50%;
     }
     
     &__body {
         position: relative;
         width: 135px;
-        margin-left: 60px;
+        margin-top: 4px;
+        margin-left: 50px;
         
     }
     
@@ -73,7 +75,7 @@ select {
     &__toogle {
         @include dinpro-reg(23px, 28px);
         position: relative;
-        margin-left: 71px;
+        margin-left: 61px;
         border: 0;
         color: #fff;
         background: transparent;

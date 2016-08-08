@@ -3,13 +3,14 @@
     position: relative;
     padding-bottom: 40px;
     text-transform: uppercase;
+    letter-spacing: 2px;
     color: #444444;
     
     &::before {
         position: absolute;
         content: "";
-        top: 0;
-        right: 440px;
+        top: 8px;
+        right: 405px;
         width: 57px;
         height: 51px;
         background: url("/img/page-icon-1.png") no-repeat 50% 50%;
@@ -18,8 +19,8 @@
     &::after {
         position: absolute;
         content: "";
-        top: 25px;
-        right: 25px;
+        top: 28px;
+        right: -3px;
         width: 404px;
         height: 3px;
         background: url("/img/line-blue.png") no-repeat 50% 50%;
