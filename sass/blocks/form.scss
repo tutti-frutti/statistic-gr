@@ -8,6 +8,10 @@
     border-top: 1px solid transparent;
     background: url("/img/form-bg.jpg");
     
+    @media #{$tablet} {
+            margin-left: 0;
+        }
+    
     
     &::before {
         position: absolute;
@@ -33,8 +37,10 @@
         color: #fff;
         
         @media #{$tablet} {
-            margin-left: 20px;
+            padding: 0 10px ;
+            margin-left: 0;
             font-size: 17px;
+            text-align: center;
         }
     }
     
@@ -44,7 +50,9 @@
         margin-left: 85px;
         
         @media #{$tablet} {
-            margin-left: 20px;
+            margin-left: 0;
+            text-align: center;
+            margin: 0 auto;
         }
     }
     
@@ -81,6 +89,10 @@ textarea {
     border: 0;
     border-bottom: 2px solid #fff;
     color: #fff;
+    
+    @media #{$tablet} {
+            width: 80%;
+        }
 }
 
 .decor {

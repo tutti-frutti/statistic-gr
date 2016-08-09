@@ -2,6 +2,11 @@
     margin-bottom: 70px;
     margin-left: 42px;
     
+    @media #{$tablet} {
+        margin-left: 0;
+        margin-bottom: 15px;    
+        }
+    
     &__title {
         @include ops-bold(18px, 21px);
         margin-bottom: 20px;
@@ -54,12 +59,14 @@
         @include rob-bold(18px, 60px);
         height: 90px;
         line-height: 90px;
+        text-transform: uppercase;
         border: 1px solid #000;
+        text-align: center;
         color: #427386;
         background: #f6f4f2;
-        text-align: center;
             &--color {
                 background: #d6e5ec;
+                @include rob-bold(30px, 82px);
     }
 }
 }

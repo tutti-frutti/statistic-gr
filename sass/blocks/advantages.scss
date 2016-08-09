@@ -9,7 +9,9 @@
         color: #444444;
         
         @media #{$tablet} {
+            margin-left: 20px;
             font-size: 25px;
+            line-height: 25px;
         }
         
         &::before {
@@ -22,8 +24,8 @@
             background: url("/img/line-blue-short.png") no-repeat center;
             
             @media #{$tablet} {
-                top: 60px;
-                right: 55px;
+                right: 0;
+                background: none;
         }
         }
     }
@@ -90,6 +92,10 @@
         max-width: 685px;
         margin-top: 26px;
         padding-left: 55px;
+        
+        @media #{$tablet} {
+            padding-left: 0;
+        }
     }
     
     &__sub-item {

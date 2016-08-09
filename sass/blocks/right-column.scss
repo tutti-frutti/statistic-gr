@@ -1,14 +1,19 @@
 .right-column {
 	display: inline-block;
     max-width: 802px;
+    text-align: left;
     
     @media #{$tablet} {
         max-width: 382px;
     }
     
     @media #{$tablet} {
-            margin-left: 0;
+            margin-left: 10px;
             margin-right: 0;
+        }
+    
+    @media #{$mobile2} {
+            margin-left: 0;
         }
     
     vertical-align: top;
@@ -21,7 +26,9 @@
         color: #8a8178;
         
         @media #{$tablet} {
+            padding-left: 0;
             line-height: 24px;
+            text-align: center;
         }
     }
 }

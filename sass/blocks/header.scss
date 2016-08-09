@@ -41,6 +41,11 @@
         margin-right: 3%;
         line-height: normal;
         vertical-align: middle;
+        
+        @media #{$tablet} {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
     }
     
     &__tel {
@@ -87,10 +92,26 @@
         line-height: normal;
         vertical-align: middle;
         
+        @media #{$tablet} {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        
         &-link {
             @include rob-med(13px, 25px);
+            position: relative;
             border-bottom: 1px dashed #fff;
             color: #fff;
+            
+            &::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: -16px;
+                width: 11px;
+                height: 15px;
+                background: url("/img/header-office.png") no-repeat center;
+            }
         }
     }
     
@@ -101,14 +122,29 @@
         
         &--mr-1 {
             margin-right: 8%;
+            
+            @media #{$tablet} {
+                margin-top: 10px;
+                margin-bottom: 10px;
+        }
         }
         
         &--mr-2 {
             margin-right: 7%;
+            
+            @media #{$tablet} {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
         }
         
         &--mr-3 {
             margin-right: 6%;
+            
+            @media #{$tablet} {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
         }
         
         &--mr-4 {

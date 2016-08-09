@@ -6,6 +6,10 @@
     background: #007fff;
     color: #fff;
     
+    @media #{$tablet} {
+         margin-left: 0;
+        }
+    
     &__top {
         @include ops-bold(14px, 21px);
         position: relative;

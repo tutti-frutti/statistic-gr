@@ -6,6 +6,10 @@
     border: 2px solid #d8d8d8;
     background: #fff;
     
+    @media #{$tablet} {
+        margin-left: 0;
+        }
+    
     &::before {
         position: absolute;
         content: "";
@@ -15,6 +19,11 @@
         height: 49px;
         background: url("/img/left-column/left-top-top.png") no-repeat 50% 50%;
         z-index: 1;
+        
+        @media #{$tablet} {
+            left: 0;
+            background: none;
+        }
     }
     
     &::after {
@@ -26,6 +35,11 @@
         height: 49px;
         background: url("/img/left-column/right-top-top.png") no-repeat 50% 50%;
         z-index: 1;
+        
+        @media #{$tablet} {
+            right: 0;
+            background: none;
+        }
     }
     
     &__wrapper {
@@ -42,6 +56,11 @@
             width: 61px;
             height: 49px;
             background: url("/img/left-column/left-bottom-top.png") no-repeat 50% 50%;
+            
+            @media #{$tablet} {
+            left: 0;
+            background: none;
+        }
         }
         
         &::after {
@@ -52,15 +71,21 @@
             width: 61px;
             height: 49px;
             background: url("/img/left-column/right-bottom-top.png") no-repeat 50% 50%;
+            
+            @media #{$tablet} {
+            right: 0;
+            background: none;
+        }
         }
     }
     
     &__top {
-        background: #ebe9e6;
+        background: #f2f1ef; // цвет закрытого меню
         padding-top: 30px;
+        padding-bottom: 30px;
         padding-left: 30px;
-        border-top: 1px solid #d8d8d8;
-        border-bottom: 1px solid #d8d8d8;
+//        border-top: 1px solid #d8d8d8;
+//        border-bottom: 1px solid #d8d8d8;
     }
     
     & a + ul {
@@ -139,4 +164,12 @@
             
         }
     }
+}
+
+//.active {
+//	background: #f2f1ef;
+//}
+
+a.active {
+//    text-decoration: underline;
 }

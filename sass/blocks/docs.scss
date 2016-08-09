@@ -10,6 +10,8 @@
     @media #{$tablet} {
         height: 300px;
         background: none;
+        margin-left: 0;
+        margin-bottom: 15px;
         }
     
     &__title {

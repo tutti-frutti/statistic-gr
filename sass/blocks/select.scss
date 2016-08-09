@@ -81,6 +81,10 @@ select {
         background: transparent;
         text-transform: uppercase;
         
+        @media #{$tablet} {
+            margin-left: 8px;
+        }
+        
         
         &::before {
             position: absolute;
