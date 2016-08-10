@@ -10,4 +10,8 @@
     border-radius: 50px;
 //    background: transparent;
     color: #fff;
+    
+    &:hover {
+        opacity: .75;
+    }
 }

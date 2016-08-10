@@ -11,5 +11,12 @@
     &__item {
         display: inline-block;
         margin-right: 5px;
+        transition: transform 0.5s;
+        
+        &:hover {
+            opacity: .75;
+            transform: scale(1.1);
+            
+        }
     }
 }

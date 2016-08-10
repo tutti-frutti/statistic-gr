@@ -1,0 +1,41 @@
+.contacts {
+	display: inline-block;
+    margin-top: 57px;
+    margin-right: 8%;
+    vertical-align: top;
+    
+    &--mr {
+        margin-right: 6%;
+    }
+    
+    @media #{$mobile2} {
+        margin-right: 0;
+    }
+    
+    &__title {
+        @include ops-bold(16px, 30px);
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        color: #3d3d3d;
+        
+    }
+    
+    &__adress {
+        @include ops-reg(12px, 24px);
+        color: #3d3d3d;
+    }
+    
+    &__mail {
+        @include ops-reg(12px, 24px);
+        color: #3d3d3d;
+    }
+    
+    &__link {
+        @include ops-reg(24px, 24px);
+        color: #3d3d3d;
+        &--lfz {
+            @include ops-reg(12px, 24px);
+            color: #3d3d3d;
+        }
+    }
+}

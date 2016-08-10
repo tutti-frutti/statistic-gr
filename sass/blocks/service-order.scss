@@ -71,6 +71,10 @@
     &__btn {
         width: 270px;
         margin: 0 auto;
+        
+        @media #{$tablet} {
+//            width: 270px;
+        }
     }
     
 }

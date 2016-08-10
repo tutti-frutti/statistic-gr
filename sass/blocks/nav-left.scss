@@ -97,7 +97,7 @@
 //    }
     
     &__medium {
-        background: #ebe9e6;
+//        background: #ebe9e6;
         margin-left: 20px;
 //        & > li {
 //            list-style: square;
@@ -164,6 +164,19 @@
             
         }
     }
+}
+
+.sub-true.active:not(:last-child) {
+    display: block;
+    width: 250px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+	
 }
 
 //.active {
