@@ -1,19 +1,16 @@
 .service-descr {
+    @include ops-reg(15px, 24px);
+    max-width: 670px;
     margin-left: 38px;
-    
-    &__text {
-        @include ops-reg(15px, 24px);
-        max-width: 670px;
-        margin-bottom: 10px;
-        color: #2d2c2c;
+    color: #2d2c2c;
         
-        &:first-child {
+        & p:first-child {
             max-width: 639px;
             margin-bottom: 31px;
         }
         
-        &:last-child {
+        & p:last-child {
+            margin-top: 10px;
             margin-bottom: 62px;
         }
     }
-}

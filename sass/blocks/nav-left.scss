@@ -84,8 +84,8 @@
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 30px;
-//        border-top: 1px solid #d8d8d8;
-//        border-bottom: 1px solid #d8d8d8;
+        border-top: 1px solid #f2f1ef;
+        border-bottom: 1px solid #f2f1ef;
     }
     
     & a + ul {
@@ -105,8 +105,10 @@
     }
     
     &__click {
-//        padding-top: 30px;
-//        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 30px;
+        background: #f2f1ef;
         & > a {
             @include rob-bold(20px, 26px);
             text-transform: uppercase;

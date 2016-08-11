@@ -10,7 +10,7 @@
     &__title {
         @include ops-bold(18px, 21px);
         margin-bottom: 20px;
-        padding-left: 40px;
+//        padding-left: 40px;
         color: #252424;
         text-transform: uppercase;
         &--mt {
@@ -20,7 +20,7 @@
     
     &__items {
         display: inline-block;
-        width: 49%;
+        width: 50%;
         margin-left: -5px;
         font-size: 0;
         
@@ -43,7 +43,7 @@
     
     &__name {
         @include rob-med(14px, 28px);
-        height: 45px;
+        height: 44px;
         line-height: 45px;
         border: 1px solid #000;
         border-bottom: 0;
@@ -57,7 +57,7 @@
     
     &__descr {
         @include rob-bold(18px, 60px);
-        height: 90px;
+        height: 96px;
         line-height: 90px;
         text-transform: uppercase;
         border: 1px solid #000;

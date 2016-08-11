@@ -51,7 +51,7 @@
     &__tel {
         display: inline-block;
         margin-top: 12px;
-        margin-right: 7%;
+        margin-right: 5.65%;
         text-align: right;
         line-height: normal;
         vertical-align: middle;
@@ -64,6 +64,7 @@
             @include rob-bold(50px, 32px);
             margin-bottom: 5px;
             color: #fff;
+            letter-spacing: 1px;
             & a {
                 color: #fff;
             }
@@ -89,9 +90,13 @@
             @include rob-med(14px, 26px);
             border-bottom: 1px dashed #fff;
             color: #fff;
+        &:hover {
+            opacity: .75;
+        }
         }
     
     &__office {
+        margin-top: -11px;
         display: inline-block;
         line-height: normal;
         vertical-align: middle;
@@ -106,6 +111,10 @@
             position: relative;
             border-bottom: 1px dashed #fff;
             color: #fff;
+            
+            &:hover {
+                opacity: .75;
+            }
             
             &::before {
                 position: absolute;
@@ -123,6 +132,10 @@
         display: inline-block;
         line-height: normal;
         vertical-align: middle;
+        
+        &:hover {
+            opacity: .75;
+        }
         
         &--mr-1 {
             margin-right: 8%;
@@ -158,5 +171,7 @@
     
     &__join {
         width: 215px;
+        padding-top: 12px;
+        letter-spacing: 1px;
     }
 }

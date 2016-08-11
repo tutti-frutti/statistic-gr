@@ -10,6 +10,9 @@
     &__link {
         @include rob-med(14px, 23px);
         color: #adadad;
+        &:hover {
+            text-decoration: underline;
+        } 
     }
     
 }

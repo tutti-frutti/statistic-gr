@@ -8,6 +8,10 @@
 //    line-height: normal;
     vertical-align: top;
     
+    @media #{$tablet} {
+        margin-top: 20px;
+    }
+    
     &__item {
         display: inline-block;
         margin-right: 5px;

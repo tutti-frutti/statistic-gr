@@ -69,11 +69,11 @@
     }
     
     &__btn {
-        width: 270px;
+        width: 310px;
         margin: 0 auto;
         
         @media #{$tablet} {
-//            width: 270px;
+            width: 270px;
         }
     }
     
