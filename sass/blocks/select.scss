@@ -109,6 +109,7 @@ select {
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        outline: none;
 //        text-transform: uppercase;
         
         @media #{$tablet} {
